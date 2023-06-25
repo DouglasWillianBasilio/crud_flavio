@@ -7,7 +7,7 @@ function App() {
   const handleChangeValues = (value) => {
     setValues(prevValue => ({
       ...prevValue,
-      [value.target]: value.target.value,
+      [value.target.name]: value.target.value,
     }));
   };
 
@@ -37,7 +37,7 @@ function App() {
           className='register--input'
           onChange={handleChangeValues}
         />
-        <button className='register--button' onClick={() => handleClickButton() }>Cadastrar</button>
+        <button className='register--button' onClick={() => handleClickButton()}>Cadastrar</button>
       </div>
 
     </div>
